@@ -1,0 +1,8 @@
+$("#bookmark_name").val("")
+$("#bookmark_url").val("")
+$("#bookmark_kind_id").val($("#bookmark_kind_id option:first").val())
+$("#bookmark_category_id").val($("#bookmark_category_id option:first").val())
+
+
+$("#table_bookmarks tbody").html("")
+$("#table_bookmarks tbody").html("<%= j render @bookmarks %>")

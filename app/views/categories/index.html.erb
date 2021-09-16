@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Categories</h1>
+
+<table class=table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Parent</th>
+      <th>Children</th>
+      <th>Private</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @categories.each do |category| %>
+      <tr>
+        <td><%= category.name %></td>
+        <td><%= category.parent ? category.parent.name : "- Sin Padre -"  %></td>
+        <td>
+           <% category.children.each do |c| %>
+              <%= c.name  %> <br>
+           <% end %>
+        </td>
+        
+        <td><%= category.private ? "Privado" : "Público" %></td>
+        <td><%= link_to 'Show', category %></td>
+        <td><%= link_to 'Edit', edit_category_path(category) %></td>
+        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Category', new_category_path %>

@@ -1,0 +1,15 @@
+current directory: /home/gcalquin/g44/proyectos/bookmarks/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+/home/gcalquin/.rvm/rubies/ruby-2.6.0/bin/ruby -I /home/gcalquin/.rvm/rubies/ruby-2.6.0/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210915-23217-1ge0yqz.rb extconf.rb
+creating Makefile
+
+current directory: /home/gcalquin/g44/proyectos/bookmarks/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/gcalquin/g44/proyectos/bookmarks/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/gcalquin/g44/proyectos/bookmarks/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -m 0755 cruby.so ./.gem.20210915-23217-noxmj7/skiptrace/internal
